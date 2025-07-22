@@ -42,7 +42,7 @@ export default function SkillsSection() {
     {
       title: ' Core Technologies',
       icon: 'ri-cloud-line',
-      color: 'orange',
+      color: 'green',
       skills: [
         { name: ' Data Structures & Algorithms', level: 80 },
         { name: 'Object-Oriented Programming', level: 80 },
@@ -92,7 +92,9 @@ export default function SkillsSection() {
         bg: 'bg-orange-100',
         text: 'text-orange-600',
         progress: 'bg-orange-600'
-      }
+      },
+      
+     
     };
     return colors[color] || colors.blue;
   };

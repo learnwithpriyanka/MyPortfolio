@@ -27,13 +27,12 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      const body = new URLSearchParams(formData).toString();
-      const response = await fetch('https://readdy.ai/api/forms/portfolio-contact', {
+      const response = await fetch('http://localhost:5000/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -81,9 +80,6 @@ export default function ContactSection() {
           </div>
         </div>
         </div>
-
-        {/* Social Links */}
-        
 
         {/* Contact Form */}
         <form className="contact-form" onSubmit={handleSubmit}>
