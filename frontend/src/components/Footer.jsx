@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand & Description */}
         <div>
-          <h2 className="text-xl font-bold mb-2">Portfolio</h2>
+          <h2 className="text-xl font-bold mb-2"><a href="/">Portfolio</a></h2>
           <p>
             Creating digital experiences that make a difference.<br />
             Let's build something amazing together.
